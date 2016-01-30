@@ -10,7 +10,6 @@ public class Bush : MonoBehaviour {
 
     public GameObject target;
 
-    public int value = 5;
     public bool berries = true;
     public bool ishiding = false;
 
@@ -27,7 +26,7 @@ public class Bush : MonoBehaviour {
 	
 	}
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
@@ -43,7 +42,7 @@ public class Bush : MonoBehaviour {
             Debug.Log("there are berries");
             berries = false;
             spriteRenderer.sprite = empty;
-            target.SendMessage("resourcecollect", value);
+            target.SendMessage("resourcecollect", 5);
         }
     }
 
