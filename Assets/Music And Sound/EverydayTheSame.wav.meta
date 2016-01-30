@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< 610f79191c62f73d6b6f11bc17ade88ca25a8003
 guid: 7045e93b77846434db383c30dd1d9307
 timeCreated: 1454187697
+=======
+guid: 6b0d64cff23e34de39ca3e5b4d84bf5a
+timeCreated: 1454187171
+>>>>>>> Added more of Harrison's Music
 licenseType: Pro
 AudioImporter:
   serializedVersion: 6
