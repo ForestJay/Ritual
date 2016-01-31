@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Interact : MonoBehaviour {
 
     public bool istouchingbank;
@@ -9,6 +10,9 @@ public class Interact : MonoBehaviour {
     public int resources;
     public GameObject cCO;
     public bool hidden = false;
+	public Text foodCounter;
+	public GameObject hideSound;
+	public GameObject unhideSound;
 
     public bool gathering;
     //public Sprite normal;
@@ -23,6 +27,9 @@ public class Interact : MonoBehaviour {
         resources = 0;
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+		foodCounter = GameObject.Find ("FoodLabel").GetComponent<Text> ();
+		hideSound = GameObject.Find ("HideSound");
+		unhideSound = GameObject.Find ("UnhideSound");
     }
 
     // Update is called once per frame
@@ -41,10 +48,10 @@ public class Interact : MonoBehaviour {
         */
         if (istouchingbush == true && Input.GetKeyDown(KeyCode.P))
         {
-            Debug.Log("touching and e pressed");
+            //Debug.Log("touching and e pressed");
             anim.SetBool("gathering", true);
             gathering = true;
-            StartCoroutine(wait());
+			gather ();
 
             // anim.SetBool("gathering", false);
             //cCO.SendMessage("pick");
@@ -52,10 +59,10 @@ public class Interact : MonoBehaviour {
 
         if (istouchingFood == true && Input.GetKeyDown(KeyCode.P))
         {
-            Debug.Log("touching and e pressed");
+            //Debug.Log("touching and e pressed");
             anim.SetBool("gathering", true);
             gathering = true;
-            StartCoroutine(wait());
+			gather ();
            
             // anim.SetBool("gathering", false);
             // cCO.SendMessage("pick");
@@ -96,6 +103,7 @@ public class Interact : MonoBehaviour {
     {
         cCO.SendMessage("hidden", true);
         hidden = true;
+		hideSound.GetComponent<AudioSource> ().Play ();
 		spriteRenderer.enabled = false;
 		anim.enabled = false;
     }
@@ -103,14 +111,20 @@ public class Interact : MonoBehaviour {
     {
         cCO.SendMessage("hidden", false);
         hidden = false;
+		unhideSound.GetComponent<AudioSource> ().Play ();
 		spriteRenderer.enabled = true;
 		anim.enabled = true;
     }
 
     void OnTriggerEnter(Collider other)
     {
+		if (other.tag == "Monster" && hidden == false) {
+
+			SceneManager.LoadScene ("Death");
+		}
         if (other.tag == "Bush")
         {
+			
             istouchingbush = true;
             cCO = other.gameObject;
 
@@ -122,6 +136,7 @@ public class Interact : MonoBehaviour {
         }
         if (other.tag == "Food")
         {
+			
             istouchingFood = true;
             cCO = other.gameObject;
         }
@@ -138,7 +153,9 @@ public class Interact : MonoBehaviour {
     void resourcecollect(int amount)
     {
         Debug.Log("picked");
-        resources += amount;
+		GetComponent<AudioSource> ().Play ();
+		resources = resources + 1;
+		foodCounter.text = resources.ToString ();
     }
 
     IEnumerator wait()
