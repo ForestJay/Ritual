@@ -6,7 +6,7 @@ public class CameraFollow : MonoBehaviour{
 	float followDistance = 12;
 	
 	void Update (){
-		iTween.MoveUpdate(gameObject,new Vector3(target.position.x,0,-followDistance),.8f);
+		iTween.MoveUpdate(gameObject,new Vector3(target.position.x,target.position.y, target.position.z - followDistance),.8f);
 	}
 }
 
