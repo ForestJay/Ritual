@@ -41,7 +41,7 @@ public class Interact : MonoBehaviour {
         */
         if (istouchingbush == true && Input.GetKeyDown(KeyCode.P))
         {
-            //Debug.Log("touching and e pressed");
+            Debug.Log("touching and e pressed");
             anim.SetBool("gathering", true);
             gathering = true;
             StartCoroutine(wait());
@@ -52,7 +52,7 @@ public class Interact : MonoBehaviour {
 
         if (istouchingFood == true && Input.GetKeyDown(KeyCode.P))
         {
-            //Debug.Log("touching and e pressed");
+            Debug.Log("touching and e pressed");
             anim.SetBool("gathering", true);
             gathering = true;
             StartCoroutine(wait());
