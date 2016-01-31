@@ -10,20 +10,27 @@ public class Bush : MonoBehaviour {
 
     public GameObject target;
 
+    public int value = 5;
     public bool berries = true;
     public bool ishiding = false;
 
     private SpriteRenderer spriteRenderer;
 
+    Animator anim;
+
+
 	void Start ()
     {
+        anim = GetComponent<Animator>();
+        //anim.SetBool("berries", true);
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = full;
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
     void OnTriggerStay(Collider other)
@@ -36,13 +43,14 @@ public class Bush : MonoBehaviour {
 
     void pick()
     {
-        Debug.Log("pick");
-        if (berries == true)
+        //Debug.Log("pick");
+        if (berries == true && ishiding == false)
         {
-            Debug.Log("there are berries");
+           // Debug.Log("there are berries");
             berries = false;
+            anim.SetBool("berries", false);
             spriteRenderer.sprite = empty;
-            target.SendMessage("resourcecollect", 5);
+            target.SendMessage("resourcecollect", value);
         }
     }
 
@@ -52,25 +60,34 @@ public class Bush : MonoBehaviour {
     {
         if (check == true)
         {
+            ishiding = true;
             if (berries == true)
             {
                 spriteRenderer.sprite = Hiddenfull;
+                anim.SetBool("hidden", true);
             }
             else
             {
                 spriteRenderer.sprite = Hidden;
+                anim.SetBool("hidden", true);
+
             }
         }
 
         if (check == false)
         {
-            if(berries == true)
+            ishiding = false;
+            if (berries == true)
             {
                 spriteRenderer.sprite = full;
+                anim.SetBool("hidden", false);
+
             }
             else
             {
                 spriteRenderer.sprite = empty;
+                anim.SetBool("hidden", false);
+
             }
         }
     }

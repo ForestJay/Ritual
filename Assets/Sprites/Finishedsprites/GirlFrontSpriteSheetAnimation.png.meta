@@ -1,0 +1,332 @@
+fileFormatVersion: 2
+guid: feffab780911d2e46b41fec1958cf7a9
+timeCreated: 1454204505
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GirlFrontSpriteSheetAnimation_0
+    21300002: GirlFrontSpriteSheetAnimation_1
+    21300004: GirlFrontSpriteSheetAnimation_2
+    21300006: GirlFrontSpriteSheetAnimation_3
+    21300008: GirlFrontSpriteSheetAnimation_4
+    21300010: GirlFrontSpriteSheetAnimation_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: GirlFrontSpriteSheetAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1550
+        width: 284
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62, y: -207}
+        - {x: 72, y: -186}
+        - {x: 117, y: -180}
+        - {x: 117, y: -143}
+        - {x: 102, y: -50}
+        - {x: 81, y: 32}
+        - {x: 60, y: 99}
+        - {x: 71, y: 119}
+        - {x: 66, y: 144}
+        - {x: 48, y: 186}
+        - {x: 20, y: 211}
+        - {x: 10, y: 212}
+        - {x: -41, y: 212}
+        - {x: -69, y: 183}
+        - {x: -97, y: 108}
+        - {x: -73, y: 81}
+        - {x: -74, y: 62}
+        - {x: -93, y: 20}
+        - {x: -118, y: -29}
+        - {x: -133, y: -65}
+        - {x: -142, y: -115}
+        - {x: -142, y: -180}
+        - {x: -132, y: -187}
+        - {x: -76, y: -198}
+        - {x: -68, y: -195}
+        - {x: -49, y: -196}
+        - {x: -42, y: -212}
+        - {x: 52, y: -212}
+    - name: GirlFrontSpriteSheetAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 1570
+        width: 284
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 140, y: -104}
+        - {x: 134, y: -73}
+        - {x: 92, y: 25}
+        - {x: 71, y: 84}
+        - {x: 86, y: 105}
+        - {x: 66, y: 174}
+        - {x: 19, y: 194}
+        - {x: -21, y: 194}
+        - {x: -33, y: 190}
+        - {x: -62, y: 159}
+        - {x: -84, y: 96}
+        - {x: -69, y: 57}
+        - {x: -113, y: -31}
+        - {x: -127, y: -67}
+        - {x: -142, y: -123}
+        - {x: -142, y: -187}
+        - {x: -135, y: -194}
+        - {x: -122, y: -197}
+        - {x: -107, y: -197}
+        - {x: -104, y: -194}
+        - {x: -104, y: -187}
+        - {x: -28, y: -210}
+        - {x: -3, y: -206}
+        - {x: 16, y: -211}
+        - {x: 18, y: -212}
+        - {x: 69, y: -212}
+        - {x: 103, y: -181}
+        - {x: 137, y: -157}
+        - {x: 140, y: -146}
+      - - {x: 115, y: -180}
+        - {x: 118, y: -179}
+        - {x: 118, y: -176}
+        - {x: 115, y: -175}
+        - {x: 113, y: -177}
+    - name: GirlFrontSpriteSheetAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 1570
+        width: 284
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 142, y: -151}
+        - {x: 142, y: -97}
+        - {x: 131, y: -63}
+        - {x: 78, y: 68}
+        - {x: 83, y: 106}
+        - {x: 78, y: 130}
+        - {x: 60, y: 168}
+        - {x: 29, y: 190}
+        - {x: 16, y: 194}
+        - {x: -15, y: 194}
+        - {x: -32, y: 190}
+        - {x: -61, y: 159}
+        - {x: -83, y: 96}
+        - {x: -67, y: 57}
+        - {x: -100, y: -5}
+        - {x: -127, y: -70}
+        - {x: -135, y: -107}
+        - {x: -142, y: -147}
+        - {x: -142, y: -186}
+        - {x: -135, y: -197}
+        - {x: -106, y: -197}
+        - {x: -103, y: -194}
+        - {x: -103, y: -187}
+        - {x: -45, y: -201}
+        - {x: -1, y: -212}
+        - {x: 63, y: -212}
+        - {x: 79, y: -188}
+        - {x: 105, y: -182}
+        - {x: 96, y: -168}
+      - - {x: 116, y: -180}
+        - {x: 119, y: -179}
+        - {x: 119, y: -176}
+        - {x: 116, y: -175}
+        - {x: 114, y: -177}
+    - name: GirlFrontSpriteSheetAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 812
+        width: 284
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63, y: -207}
+        - {x: 73, y: -186}
+        - {x: 87, y: -185}
+        - {x: 118, y: -180}
+        - {x: 118, y: -153}
+        - {x: 103, y: -50}
+        - {x: 82, y: 32}
+        - {x: 61, y: 99}
+        - {x: 72, y: 119}
+        - {x: 67, y: 144}
+        - {x: 49, y: 186}
+        - {x: 21, y: 211}
+        - {x: 11, y: 212}
+        - {x: -40, y: 212}
+        - {x: -69, y: 183}
+        - {x: -96, y: 108}
+        - {x: -71, y: 81}
+        - {x: -73, y: 62}
+        - {x: -92, y: 20}
+        - {x: -117, y: -29}
+        - {x: -132, y: -65}
+        - {x: -142, y: -120}
+        - {x: -142, y: -180}
+        - {x: -131, y: -187}
+        - {x: -75, y: -198}
+        - {x: -67, y: -195}
+        - {x: -48, y: -196}
+        - {x: -41, y: -212}
+        - {x: 53, y: -212}
+    - name: GirlFrontSpriteSheetAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 855
+        width: 284
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 103, y: -183}
+        - {x: 140, y: -151}
+        - {x: 140, y: -112}
+        - {x: 132, y: -69}
+        - {x: 77, y: 66}
+        - {x: 82, y: 104}
+        - {x: 77, y: 128}
+        - {x: 59, y: 166}
+        - {x: 28, y: 188}
+        - {x: 15, y: 192}
+        - {x: -16, y: 192}
+        - {x: -33, y: 188}
+        - {x: -62, y: 157}
+        - {x: -84, y: 94}
+        - {x: -69, y: 55}
+        - {x: -113, y: -33}
+        - {x: -127, y: -69}
+        - {x: -140, y: -126}
+        - {x: -142, y: -147}
+        - {x: -142, y: -191}
+        - {x: -136, y: -198}
+        - {x: -122, y: -199}
+        - {x: -107, y: -199}
+        - {x: -104, y: -196}
+        - {x: -104, y: -189}
+        - {x: -83, y: -189}
+        - {x: -26, y: -212}
+        - {x: 0, y: -212}
+        - {x: 12, y: -205}
+        - {x: 22, y: -212}
+        - {x: 55, y: -212}
+      - - {x: 115, y: -182}
+        - {x: 118, y: -181}
+        - {x: 118, y: -178}
+        - {x: 115, y: -177}
+        - {x: 113, y: -179}
+    - name: GirlFrontSpriteSheetAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 848
+        width: 284
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 136, y: -158}
+        - {x: 141, y: -154}
+        - {x: 141, y: -105}
+        - {x: 135, y: -65}
+        - {x: 95, y: 17}
+        - {x: 71, y: 82}
+        - {x: 82, y: 104}
+        - {x: 77, y: 128}
+        - {x: 59, y: 166}
+        - {x: 28, y: 188}
+        - {x: 15, y: 192}
+        - {x: -16, y: 192}
+        - {x: -33, y: 188}
+        - {x: -62, y: 157}
+        - {x: -84, y: 94}
+        - {x: -69, y: 55}
+        - {x: -113, y: -33}
+        - {x: -127, y: -69}
+        - {x: -140, y: -126}
+        - {x: -142, y: -147}
+        - {x: -142, y: -191}
+        - {x: -136, y: -198}
+        - {x: -122, y: -199}
+        - {x: -107, y: -199}
+        - {x: -104, y: -196}
+        - {x: -104, y: -189}
+        - {x: -34, y: -212}
+        - {x: 8, y: -212}
+        - {x: 56, y: -209}
+        - {x: 103, y: -183}
+        - {x: 102, y: -165}
+      - - {x: 55, y: -209}
+        - {x: 56, y: -212}
+        - {x: 60, y: -212}
+        - {x: 62, y: -210}
+        - {x: 61, y: -207}
+        - {x: 57, y: -207}
+      - - {x: 115, y: -182}
+        - {x: 118, y: -181}
+        - {x: 118, y: -178}
+        - {x: 115, y: -177}
+        - {x: 113, y: -179}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
