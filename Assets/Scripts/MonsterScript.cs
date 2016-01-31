@@ -26,17 +26,15 @@ public class MonsterScript : MonoBehaviour {
 		
 		Ray camerarayMiddle = new Ray (transform.position, transform.forward*sight);
 		Ray camerarayTop = new Ray (transform.position+(transform.up), transform.forward * sight);
-		Ray camerarayBottom = new Ray (transform.position+(transform.up*-1), transform.forward * sight);
-		Ray camerarayLeft = new Ray (transform.position+(transform.right*-0.5f), transform.forward * sight);
-		Ray camerarayRight = new Ray (transform.position+(transform.right*0.5f), transform.forward * sight);
-		if (Physics.Raycast (camerarayMiddle, out hit, sight)||Physics.Raycast (camerarayTop, out hit, sight)||Physics.Raycast (camerarayBottom, out hit, sight)||Physics.Raycast (camerarayLeft, out hit, sight)||Physics.Raycast (camerarayRight, out hit, sight)) {
+		Ray camerarayLeft = new Ray (transform.position+(transform.right*-0.5f), transform.right*(sight/-2)+transform.forward * sight);
+		Ray camerarayRight = new Ray (transform.position+(transform.right*0.5f), transform.right*(sight/2)+transform.forward * sight);
+		if (Physics.Raycast (camerarayMiddle, out hit, sight)||Physics.Raycast (camerarayTop, out hit, sight)||Physics.Raycast (camerarayLeft, out hit, sight)||Physics.Raycast (camerarayRight, out hit, sight)) {
 			if (hit.collider.tag == "Player" && hit.collider.GetComponent<Interact>().hidden==false) {
 				angered = true;
 
 
 				Debug.DrawRay (camerarayMiddle.origin, camerarayMiddle.direction * hit.distance, Color.red);
 				Debug.DrawRay (camerarayTop.origin, camerarayTop.direction * hit.distance, Color.red);
-				Debug.DrawRay (camerarayBottom.origin, camerarayBottom.direction * hit.distance, Color.red);
 				Debug.DrawRay (camerarayLeft.origin, camerarayLeft.direction * hit.distance, Color.red);
 				Debug.DrawRay (camerarayRight.origin, camerarayRight.direction * hit.distance, Color.red);
 				//draw rays for testing purposes
@@ -51,7 +49,6 @@ public class MonsterScript : MonoBehaviour {
 
 				Debug.DrawRay (camerarayMiddle.origin, camerarayMiddle.direction * sight, Color.blue);
 				Debug.DrawRay (camerarayTop.origin, camerarayTop.direction * sight, Color.blue);
-				Debug.DrawRay (camerarayBottom.origin, camerarayBottom.direction * sight, Color.blue);
 				Debug.DrawRay (camerarayLeft.origin, camerarayLeft.direction * sight, Color.blue);
 				Debug.DrawRay (camerarayRight.origin, camerarayRight.direction * sight, Color.blue);
 				//draw rays for testing purposes
@@ -59,7 +56,6 @@ public class MonsterScript : MonoBehaviour {
 				
 				Debug.DrawRay (camerarayMiddle.origin, camerarayMiddle.direction * sight, Color.yellow);
 				Debug.DrawRay (camerarayTop.origin, camerarayTop.direction * sight, Color.yellow);
-				Debug.DrawRay (camerarayBottom.origin, camerarayBottom.direction * sight, Color.yellow);
 				Debug.DrawRay (camerarayLeft.origin, camerarayLeft.direction * sight, Color.yellow);
 				Debug.DrawRay (camerarayRight.origin, camerarayRight.direction * sight, Color.yellow);
 				//draw rays for testing purposes
@@ -70,7 +66,6 @@ public class MonsterScript : MonoBehaviour {
 
 			Debug.DrawRay (camerarayMiddle.origin, camerarayMiddle.direction * sight, Color.green);
 			Debug.DrawRay (camerarayTop.origin, camerarayTop.direction * sight, Color.green);
-			Debug.DrawRay (camerarayBottom.origin, camerarayBottom.direction * sight, Color.green);
 			Debug.DrawRay (camerarayLeft.origin, camerarayLeft.direction * sight, Color.green);
 			Debug.DrawRay (camerarayRight.origin, camerarayRight.direction * sight, Color.green);
 			//draw rays for testing purposes
