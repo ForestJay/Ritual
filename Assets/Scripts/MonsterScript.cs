@@ -14,6 +14,7 @@ public class MonsterScript : MonoBehaviour {
 	void Start()
 	{
 		//anim = GetComponent<Animator>();
+        //anim.Play("monsterdown");
 		//anim.SetBool("downwards", true);
 		stopPoint = GameObject.Find ("StopPoint");
 		cameraObject = GameObject.FindGameObjectWithTag ("MainCamera");

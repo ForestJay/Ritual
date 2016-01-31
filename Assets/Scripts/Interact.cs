@@ -35,17 +35,6 @@ public class Interact : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (hidden == true)
-        {
-		//	spriteRenderer.enabled = false;
-			//anim.enabled = false;
-        }
-/*
-        if (hidden == false)
-        {
-            spriteRenderer.sprite = normal;
-        }
-        */
         if (istouchingbush == true && Input.GetKeyDown(KeyCode.P))
         {
             //Debug.Log("touching and e pressed");
@@ -116,7 +105,7 @@ public class Interact : MonoBehaviour {
 		anim.enabled = true;
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
 		if (other.tag == "Monster" && hidden == false) {
 
@@ -133,6 +122,11 @@ public class Interact : MonoBehaviour {
         {
             istouchingbank = true;
             cCO = other.gameObject;
+        }
+        if (other.tag == "OldMan" && resources >= 10)
+        {
+            SceneManager.LoadScene("WinScene");
+
         }
         if (other.tag == "Food")
         {
